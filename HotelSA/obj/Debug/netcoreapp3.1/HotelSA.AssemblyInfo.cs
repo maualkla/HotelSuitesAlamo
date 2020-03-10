@@ -11,6 +11,7 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.AspNetCore.Identity.UI.UIFrameworkAttribute("Bootstrap4")]
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-HotelSA-B800BD3F-74CC-4615-8915-031D466BF4BC")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("HotelSA")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
