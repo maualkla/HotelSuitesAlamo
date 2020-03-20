@@ -15,7 +15,7 @@ namespace HotelSA.Controllers
         {
             ViewData["id"] = id;
             ViewData["data"] = data;
-            String datos = " Hola Mau como estas ";
+            String datos = " Testa Values ";
             return View("index", datos);
         }
         // Metodo Default del controlador
