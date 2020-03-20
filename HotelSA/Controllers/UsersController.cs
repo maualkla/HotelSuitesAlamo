@@ -6,13 +6,21 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HotelSA.Controllers
 {
+    [Route("/Usuario")]
     public class UsersController : Controller
     {
-        [HttpGet]
+        //[HttpGet]
+        [Route("/Usuario/Inicio")]
         public IActionResult Index(String id, String data)
         {
             ViewData["id"] = id;
             ViewData["data"] = data;
+            String datos = " Hola Mau como estas ";
+            return View("index", datos);
+        }
+        // Metodo Default del controlador
+        public IActionResult Index()
+        {
             return View();
         }
     }
