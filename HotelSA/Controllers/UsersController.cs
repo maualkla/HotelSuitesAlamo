@@ -9,8 +9,10 @@ namespace HotelSA.Controllers
     public class UsersController : Controller
     {
         [HttpGet]
-        public IActionResult Index()
+        public IActionResult Index(String id, String data)
         {
+            ViewData["id"] = id;
+            ViewData["data"] = data;
             return View();
         }
     }
