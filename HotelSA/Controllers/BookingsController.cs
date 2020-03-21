@@ -16,7 +16,13 @@ namespace HotelSA.Controllers
         [Route("/Reservas/Formulario")]
         public IActionResult Form(int data, int id)
         {
-            return View();
+            ViewData["id"] = "";
+            ViewData["id"] = id;
+            if (data != 1 && data != 2)
+            {
+                data = 0;
+            }
+            return View("Form", data);
         }
     }
 }

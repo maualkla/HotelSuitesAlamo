@@ -1,7 +1,20 @@
-﻿
+﻿@model int
+
 @{
-    ViewData["Title"] = "Form";
+    String val = "No Value";
+    if (Model == 1)
+    {
+        val = "Nueva Reserva";
+    }
+    else
+    {
+        val = "Editar Reserva ";
+    }
 }
 
-<h1>Form</h1>
+@{
+    ViewData["Title"] = val + ViewData["id"];
+}
+
+<h1>Formulario @val  @ViewData["id"]</h1>
 
