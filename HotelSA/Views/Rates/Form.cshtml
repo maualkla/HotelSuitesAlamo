@@ -4,15 +4,16 @@
 }
 
 @{
-        if (Model == 1) 
-        { 
-            String val = "Nuevo"; 
-        } 
-        else
-        { 
-            String val = "Editar"; 
-        }
+    String val = "No Value";
+    if (Model == 1)
+    {
+        val = "Nuevo";
+    }
+    else
+    {
+        val = "Editar";
+    }
 }
 
-    <h1>Formulario</h1>
+    <h1>Formulario @val </h1>
 
