@@ -4,11 +4,11 @@
     String val = "No Value";
     if (Model == 1)
     {
-        val = "Nuevo";
+        val = "Nuevo Empleado";
     }
     else
     {
-        val = "Editar";
+        val = "Editar Empleado " + ViewData["id"];
     }
 }
 
@@ -16,8 +16,5 @@
     ViewData["Title"] = val;
 }
 
-
-
 <h1>Formulario @val </h1>
-<a href="/Tarifas"> Volver a Tarifas</a>
-
+<a href="/Empleados"> Volver a Empleados </a>

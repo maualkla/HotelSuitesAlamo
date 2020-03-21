@@ -4,11 +4,11 @@
     String val = "No Value";
     if (Model == 1)
     {
-        val = "Nuevo";
+        val = "Nueva Reserva";
     }
     else
     {
-        val = "Editar";
+        val = "Editar Reserva " + ViewData["id"];
     }
 }
 
@@ -16,8 +16,6 @@
     ViewData["Title"] = val;
 }
 
-
-
 <h1>Formulario @val </h1>
-<a href="/Tarifas"> Volver a Tarifas</a>
+<a href="/Reservas"> Volver a Reservas </a>
 

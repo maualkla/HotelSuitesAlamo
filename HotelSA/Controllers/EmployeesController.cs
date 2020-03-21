@@ -6,14 +6,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HotelSA.Controllers
 {
-    [Route("/Reservas")]
-    public class BookingsController : Controller
+    [Route("/Empleados")]
+    public class EmployeesController : Controller
     {
         public IActionResult Index()
         {
             return View();
         }
-        [Route("/Reservas/Formulario")]
+        [Route("/Empleados/Formulario")]
         public IActionResult Form(int data, string id)
         {
             ViewData["id"] = "N/A";
