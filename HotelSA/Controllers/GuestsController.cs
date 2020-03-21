@@ -13,5 +13,16 @@ namespace HotelSA.Controllers
         {
             return View();
         }
+        [Route("/Huespedes/Formulario")]
+        public IActionResult Form(int data, string id)
+        {
+            ViewData["id"] = "N/A";
+            ViewData["id"] = id;
+            if (data != 1 && data != 2)
+            {
+                data = 0;
+            }
+            return View("Form", data);
+        }
     }
 }
