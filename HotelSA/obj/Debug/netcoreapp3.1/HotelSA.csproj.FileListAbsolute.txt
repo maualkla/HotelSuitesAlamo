@@ -156,3 +156,4 @@ C:\Users\mauri\Documents\Escuela\UPA\Estadias\Documentación\Proyecto\HotelSuite
 C:\Users\mauri\Documents\Escuela\UPA\Estadias\Documentación\Proyecto\HotelSuitesAlamo\HotelSA\obj\Debug\netcoreapp3.1\Razor\Views\GeneralBit\Index.cshtml.g.cs
 C:\Users\mauri\Documents\Escuela\UPA\Estadias\Documentación\Proyecto\HotelSuitesAlamo\HotelSA\obj\Debug\netcoreapp3.1\Razor\Views\GeneralBit\Details.cshtml.g.cs
 C:\Users\mauri\Documents\Escuela\UPA\Estadias\Documentación\Proyecto\HotelSuitesAlamo\HotelSA\obj\Debug\netcoreapp3.1\Razor\Views\Rates\Index.cshtml.g.cs
+C:\Users\mauri\Documents\Escuela\UPA\Estadias\Documentación\Proyecto\HotelSuitesAlamo\HotelSA\obj\Debug\netcoreapp3.1\Razor\Views\Rates\Form.cshtml.g.cs
