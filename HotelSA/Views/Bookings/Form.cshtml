@@ -8,13 +8,13 @@
     }
     else
     {
-        val = "Editar Reserva ";
+        val = "Editar Reserva " + ViewData["id"];
     }
 }
 
 @{
-    ViewData["Title"] = val + ViewData["id"];
+    ViewData["Title"] = val;
 }
 
-<h1>Formulario @val  @ViewData["id"]</h1>
+<h1>Formulario @val </h1>
 
