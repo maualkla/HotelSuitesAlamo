@@ -1,0 +1,20 @@
+﻿@model int
+
+@{
+    String val = "No Value";
+    if (Model == 1)
+    {
+        val = "Nuevo Empleado";
+    }
+    else
+    {
+        val = "Editar Empleado " + ViewData["id"];
+    }
+}
+
+@{
+    ViewData["Title"] = val;
+}
+
+<h1>Formulario @val </h1>
+<a href="/Empleados"> Volver a Empleados </a>
