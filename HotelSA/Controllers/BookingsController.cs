@@ -16,7 +16,7 @@ namespace HotelSA.Controllers
         [Route("/Reservas/Formulario")]
         public IActionResult Form(int data, string id)
         {
-            ViewData["id"] = "NO HAY VALOR";
+            ViewData["id"] = "N/A";
             ViewData["id"] = id;
             if (data != 1 && data != 2)
             {
