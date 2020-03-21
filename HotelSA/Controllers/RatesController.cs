@@ -14,20 +14,13 @@ namespace HotelSA.Controllers
             return View();
         }
         [Route("/Tarifas/Formulario")]
-        public IActionResult Form(int action)
+        public IActionResult Form(int data)
         {
-            if(action == 1)
+            if (data != 1 && data != 2)
             {
-                // Ver - Editar
-                ViewData["action"] = 1;
+                data = 0;
             }
-            else
-            {
-                // Crear
-                ViewData["action"] = 2;
-                action = 2;
-            }
-            return View("Form", action);
+            return View("Form", data);
         }
     }
 }
