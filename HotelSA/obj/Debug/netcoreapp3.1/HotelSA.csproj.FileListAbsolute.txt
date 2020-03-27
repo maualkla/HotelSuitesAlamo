@@ -164,3 +164,5 @@ C:\Users\mauri\Documents\Escuela\UPA\Estadias\Documentación\Proyecto\HotelSuite
 C:\Users\mauri\Documents\Escuela\UPA\Estadias\Documentación\Proyecto\HotelSuitesAlamo\HotelSA\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Index.cshtml.g.cs
 C:\Users\mauri\Documents\Escuela\UPA\Estadias\Documentación\Proyecto\HotelSuitesAlamo\HotelSA\obj\Debug\netcoreapp3.1\Razor\Views\Employees\Form.cshtml.g.cs
 C:\Users\mauri\Documents\Escuela\UPA\Estadias\Documentación\Proyecto\HotelSuitesAlamo\HotelSA\obj\Debug\netcoreapp3.1\Razor\Views\WorkShifMovementsBit\Index.cshtml.g.cs
+C:\Users\mauri\Documents\Escuela\UPA\Estadias\Documentación\Proyecto\HotelSuitesAlamo\HotelSA\obj\Debug\netcoreapp3.1\HotelSA.csproj.CoreCompileInputs.cache
+C:\Users\mauri\Documents\Escuela\UPA\Estadias\Documentación\Proyecto\HotelSuitesAlamo\HotelSA\obj\Debug\netcoreapp3.1\HotelSA.genruntimeconfig.cache
