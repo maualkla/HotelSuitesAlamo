@@ -108,3 +108,11 @@ body {
     border: 4px solid rgba(164,164,164,0.47);
     border-radius: 14px;
 }
+    .general-button:active {
+        border: 4px groove rgba(142,142,142,0.47);
+        border-radius: 14px;
+    }
+    .general-button:focus {
+        border: 4px groove rgba(142,142,142,0.47);
+        border-radius: 14px;
+    }
