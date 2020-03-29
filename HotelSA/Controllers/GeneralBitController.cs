@@ -13,7 +13,8 @@ namespace HotelSA.Controllers
         {
             return View();
         }
-        [Route("/BitacoraGeneral/Detalles")]
+        [HttpGet("/BitacoraGeneral/Detalles")]
+        [HttpGet("/BitacoraGeneral/Detalles/{id}")]
         public IActionResult Details(string id)
         {
             ViewData["id"] = id;

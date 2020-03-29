@@ -20,7 +20,8 @@ namespace HotelSA.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            String url = "/BitacoraGeneral";
+            return Redirect(url);
         }
 
         public IActionResult Privacy()
