@@ -23,5 +23,6 @@ namespace HotelSA.Controllers
         {
             return View();
         }
+        
     }
 }
