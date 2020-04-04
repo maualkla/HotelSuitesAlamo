@@ -19,7 +19,13 @@ namespace HotelSA.Controllers
             return View("index", datos);
         }
         // Metodo Default del controlador
+        [Route("/Usuario")]
         public IActionResult Index()
+        {
+            return View();
+        }
+        [Route("/Login")]
+        public IActionResult Form()
         {
             return View();
         }
