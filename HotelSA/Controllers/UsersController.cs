@@ -23,9 +23,6 @@ namespace HotelSA.Controllers
         {
             return View();
         }
-        public IActionResult LoginPage()
-        {
-
-        }
+        
     }
 }
