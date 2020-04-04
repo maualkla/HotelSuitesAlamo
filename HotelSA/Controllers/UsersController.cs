@@ -29,6 +29,10 @@ namespace HotelSA.Controllers
         {
             return View();
         }
-        
+        [Route("/Registro")]
+        public IActionResult Register()
+        {
+            return View();
+        }
     }
 }
