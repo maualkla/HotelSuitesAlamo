@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelSA.Controllers
@@ -9,6 +10,12 @@ namespace HotelSA.Controllers
     [Route("/Usuario")]
     public class UsersController : Controller
     {
+        private UserManager<IdentityUser> _UserManager;
+        public UsersController(UserManager<IdentityUser> userManager)
+        {
+            _UserManager = userManager;
+        }
+
         //[HttpGet]
         [Route("/Usuario/Inicio")]
         public IActionResult Index(String id, String data)
@@ -42,11 +49,19 @@ namespace HotelSA.Controllers
         [Route("/Registro/Nuevo")]
         public ActionResult CreateUser(string name, string email, string alias, string pass)
         {
-            string parametros = "Parametros: " + alias + " & " + pass;
 
-            if (alias == "Mauricio" && pass == "12345")
+            if (ModelState.IsValid)
             {
-                return RedirectToAction("Index", "BitacoraGeneral");
+                string parametros = "Parametros: " + alias + " & " + pass;
+
+                if (alias == "Mauricio" && pass == "12345")
+                {
+                    return RedirectToAction("Index", "BitacoraGeneral");
+                }
+                else
+                {
+                    return View("Index", parametros);
+                }
             }
             else
             {
