@@ -18,7 +18,6 @@ namespace HotelSA.Controllers
         }
 
 */
-
         //[HttpGet]
         [Route("/Usuario/Inicio")]
         public IActionResult Index(String id, String data)
@@ -70,7 +69,7 @@ namespace HotelSA.Controllers
             }
             else
             {
-                return View("Index", parametros);
+                return View("Index");
             }
         }
     }
