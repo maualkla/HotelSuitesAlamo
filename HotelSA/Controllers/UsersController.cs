@@ -42,8 +42,16 @@ namespace HotelSA.Controllers
         [Route("/Registro/Nuevo")]
         public ActionResult CreateUser(string name, string email, string alias, string pass)
         {
-            string parametros = "Exito, llegamos al valor." + alias + " : " + pass;
-            return View("Index", parametros );
+            string parametros = "Parametros: " + alias + " & " + pass;
+
+            if (alias == "Mauricio" && pass == "12345")
+            {
+                return RedirectToAction("Index", "BitacoraGeneral");
+            }
+            else
+            {
+                return View("Index", parametros);
+            }
         }
     }
 }
