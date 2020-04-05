@@ -24,6 +24,10 @@ namespace HotelSA.Controllers
         {
             return View();
         }
+        public IActionResult Index(string parametros)
+        {
+            return View();
+        }
         [Route("/Login")]
         public IActionResult Form()
         {
@@ -31,8 +35,15 @@ namespace HotelSA.Controllers
         }
         [Route("/Registro")]
         public IActionResult Register()
-        {
+        { 
+
             return View();
+        }
+        [Route("/Registro/Nuevo")]
+        public ActionResult CreateUser(string name, string email, string alias, string pass)
+        {
+            string parametros = "Exito, llegamos al valor." + alias + " : " + pass;
+            return View("Index", parametros );
         }
     }
 }
