@@ -10,11 +10,14 @@ namespace HotelSA.Controllers
     [Route("/Usuario")]
     public class UsersController : Controller
     {
+/*
         private UserManager<IdentityUser> _UserManager;
         public UsersController(UserManager<IdentityUser> userManager)
         {
             _UserManager = userManager;
         }
+
+*/
 
         //[HttpGet]
         [Route("/Usuario/Inicio")]
@@ -52,6 +55,8 @@ namespace HotelSA.Controllers
 
             if (ModelState.IsValid)
             {
+                //var userList = _UserManager.Users.
+
                 string parametros = "Parametros: " + alias + " & " + pass;
 
                 if (alias == "Mauricio" && pass == "12345")
