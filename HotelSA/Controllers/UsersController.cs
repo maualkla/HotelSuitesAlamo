@@ -59,7 +59,7 @@ namespace HotelSA.Controllers
             {
                 cn.Open();
 
-                SqlCommand cmd = new SqlCommand("Select * From users", cn);
+                SqlCommand cmd = new SqlCommand("Select * From usuarios", cn);
                 SqlDataReader dr = cmd.ExecuteReader();
 
                 if (dr.Read())
