@@ -54,18 +54,19 @@ namespace HotelSA.Controllers
         [Route("/Registro/Nuevo")]
         public ActionResult CreateUser(string name, string email, string alias, string pass)
         {
-            string resultado = "No entro";
+            object resultado = "No entro";
             using (SqlConnection cn = new SqlConnection("Data Source=MAUALKLA;Initial Catalog=hosa;Integrated Security=True"))
             {
                 cn.Open();
+                String myQuery = "Select count(*) From usuarios Where alias = '" + alias + "' AND contra = '" + pass + "'";
+                SqlCommand cmd = new SqlCommand(myQuery , cn);
+                //SqlDataReader dr = cmd.ExecuteReader();
+                int dr = (int)cmd.ExecuteScalar();
 
-                SqlCommand cmd = new SqlCommand("Select * From usuarios", cn);
-                SqlDataReader dr = cmd.ExecuteReader();
-
-                if (dr.Read())
-                {
-                    resultado = Convert.ToString(cmd);
-                }
+                //if (dr.Read())
+                //{
+                   resultado = dr;
+                //}
             }
 
 
@@ -73,16 +74,16 @@ namespace HotelSA.Controllers
             {
                 //var userList = _UserManager.Users.
 
-                string parametros = resultado + "Parametros: " + alias + " & " + pass;
+                string parametros = resultado.ToString() + " Parametros: " + alias + " & " + pass;
 
-                if (alias == "Mauricio" && pass == "12345")
-                {
-                    return RedirectToAction("Index", "BitacoraGeneral");
-                }
-                else
-                {
+                //if (alias == "Mauricio" && pass == "12345")
+                //{
+                //    return RedirectToAction("Index", "BitacoraGeneral");
+                //}
+                //else
+                //{
                     return View("Index", parametros);
-                }
+                //}
             }
             else
             {
