@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewData["Title"] = "Registro";
+}
+
+<h1>Registro</h1>
+
+<div>
+    <form method="post" action="/Registro/Nuevo">
+        <p> <input type="text" name="name" placeholder="Nombre" class="general-input-text" /></p>
+        <p> <input type="email" name="eamil" placeholder="Email" class="general-input-text" /></p>
+        <p> <input type="text" name="alias" placeholder="Alias (Nombre de Usuario)" class="general-input-text" /></p>
+        <p> <input type="password" name="pass" placeholder="Contaseña" class="general-input-text" /></p>
+        <p> <input type="password" name="pass" placeholder="Confirmar Contraseña" class="general-input-text" /></p>
+        <p> <input type="submit" value="Registrar" class="general-button" /> </p>
+    </form>
+</div>

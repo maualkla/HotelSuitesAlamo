@@ -53,6 +53,9 @@ namespace HotelSA
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
+            // Added by Maualkla
+            app.UseStatusCodePages();
+
             app.UseRouting();
 
             app.UseAuthentication();
